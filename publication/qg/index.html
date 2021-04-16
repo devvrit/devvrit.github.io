@@ -23,7 +23,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="https://hardik2396.github.io/publication/meta-sim2/">
+  <link rel="canonical" href="https://hardik2396.github.io/publication/qg/">
 
   
 
@@ -129,18 +129,26 @@
       </div>
 
     
-    <img src="https://hardik2396.github.io/img/meta-sim2.jpg" class="pub-banner" itemprop="image">
+    <img src="https://hardik2396.github.io/img/qg_arch.png" class="pub-banner" itemprop="image">
     
 
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">Procedural models are being widely used to synthesize scenes for graphics, gaming, and to create (labeled) synthetic datasets for ML. In order to produce realistic and diverse scenes, a number of parameters governing the procedural models have to be carefully tuned by experts. These parameters control both the structure of scenes being generated (e.g. how many cars in the scene), as well as parameters which place objects in valid configurations. Meta-Sim aimed at automatically tuning parameters  given a target collection of real images in an unsupervised way. In Meta-Sim2, we aim to learn the scene structure in addition to parameters, which is a challenging problem due to its discrete nature. Meta-Sim2 proceeds by learning to sequentially sample rule expansions from a given probabilistic scene grammar. Due to the discrete nature of the problem, we use Reinforcement Learning to train our model, and design a feature space divergence between our synthesized and target images that is key to successful training. Experiments on a real driving dataset show that, without any supervision, we can successfully learn to generate data that captures discrete structural statistics of objects, such as their frequency, in real images. We also show that this leads to downstream improvement in the performance of an object detector trained on our generated dataset as opposed to other baseline simulation methods. Project page: https://nv-tlabs.github.io/meta-sim-structure/.</p>
+    <p class="pub-abstract" itemprop="text">Question generation (QG) attempts to solve the inverse of question answering (QA) problem by generating a natural language question given a document and an answer. While sequence to sequence neural models surpass rule-based systems for QG, they are limited in their capacity to focus on more than one supporting fact. For QG, we often require multiple supporting facts to
+    generate high-quality questions. Inspired by recent works on multi-hop reasoning in QA, we
+    take up Multi-hop question generation, which aims at generating relevant questions based on
+    supporting facts in the context. We employ multitask learning with the auxiliary task of answeraware supporting fact prediction to guide the question generator. In addition, we also proposed a
+    question-aware reward function in a Reinforcement Learning (RL) framework to maximize the
+    utilization of the supporting facts. We demonstrate the effectiveness of our approach through experiments on the multi-hop question answering dataset, HotPotQA. Empirical evaluation shows
+    our model to outperform the single-hop neural question generation models on both automatic
+    evaluation metrics such as BLEU, METEOR, and ROUGE, and human evaluation metrics for
+    quality and coverage of the generated questions./.</p>
 
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-10">
         <div class="row">
           <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
-          <div class="col-xs-12 col-sm-9">European Conference on Computer Vision, 2020</div>
+          <div class="col-xs-12 col-sm-9">International Conference on Computational Linguistics, 2020</div>
         </div>
       </div>
       <div class="col-sm-1"></div>
@@ -177,7 +185,7 @@
 
 <a class="btn btn-primary btn-outline"
 onclick="
-    var div = document.getElementById('meta-sim2_bib');
+    var div = document.getElementById('qg_bib');
     if (div.style.display !== 'none') {
         div.style.display = 'none';
     }
@@ -201,12 +209,23 @@ onclick="
 
 
 
-<pre id = "meta-sim2_bib", style="display:none">
-@inproceedings{devaranjan2020metasim2,
- title={Meta-Sim2: Learning to Generate Synthetic Datasets},
- author={Devaranjan, Jeevan and Kar, Amlan and Fidler, Sanja},
- booktitle={ECCV},
- year={2020}
+<pre id = "qg_bib", style="display:none">
+@inproceedings{gupta-etal-2020-reinforced,
+    title = "Reinforced Multi-task Approach for Multi-hop Question Generation",
+    author = "Gupta, Deepak  and
+      Chauhan, Hardik  and
+      Akella, Ravi Tej  and
+      Ekbal, Asif  and
+      Bhattacharyya, Pushpak",
+    booktitle = "Proceedings of the 28th International Conference on Computational Linguistics",
+    month = dec,
+    year = "2020",
+    address = "Barcelona, Spain (Online)",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2020.coling-main.249",
+    doi = "10.18653/v1/2020.coling-main.249",
+    pages = "2760--2775",
+    abstract = "Question generation (QG) attempts to solve the inverse of question answering (QA) problem by generating a natural language question given a document and an answer. While sequence to sequence neural models surpass rule-based systems for QG, they are limited in their capacity to focus on more than one supporting fact. For QG, we often require multiple supporting facts to generate high-quality questions. Inspired by recent works on multi-hop reasoning in QA, we take up Multi-hop question generation, which aims at generating relevant questions based on supporting facts in the context. We employ multitask learning with the auxiliary task of answer-aware supporting fact prediction to guide the question generator. In addition, we also proposed a question-aware reward function in a Reinforcement Learning (RL) framework to maximize the utilization of the supporting facts. We demonstrate the effectiveness of our approach through experiments on the multi-hop question answering dataset, HotPotQA. Empirical evaluation shows our model to outperform the single-hop neural question generation models on both automatic evaluation metrics such as BLEU, METEOR, and ROUGE and human evaluation metrics for quality and coverage of the generated questions.",
 }
 </pre>
 
