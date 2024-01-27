@@ -179,11 +179,11 @@ blockquote p:last-child {
 
 .home-section {
   background-color: rgb(255, 255, 255);
-  padding: 60px 0 60px 0;
+  padding: 10px 0 30px 0;
 }
 @media screen and (max-width: 768px) {
   .home-section {
-    padding: 60px 0 60px 0;
+    padding: 10px 0 30px 0;
   }
 }
 
@@ -212,7 +212,7 @@ blockquote p:last-child {
 
 #profile {
   text-align: center;
-  padding: 30px 10px;
+  padding: 30px 00px;
   position: relative;
 }
 
@@ -247,7 +247,7 @@ blockquote p:last-child {
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  margin-top: 30px;
+  margin-top: 00px;
 }
 
 #profile .social-icon li {
@@ -435,7 +435,7 @@ ul.share li:hover .fa {
 
 .pub-icon {
   color: #03396c;
-  font-size: 0.81em;
+  font-size: 0.0em;
   padding-top: 6px;
 }
 

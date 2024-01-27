@@ -1,0 +1,26 @@
+.image-container {
+    position: relative;
+    display: flex; /* Using Flexbox */
+    justify-content: flex-end; /* Aligns children (image) to the end (right) */
+    /* Add any specific width or height if needed */
+  }
+  
+  .image-container img {
+    display: block; /* removes bottom space/line */
+    /* width: 100%; /* or any other dimension */
+    /* height: auto; */
+   
+    right: 0; /* Aligns the image to the right */
+  }
+  
+  .image-container .tag {
+    position: absolute;
+    border-radius: 10% 0% 0% 10%; /* Rounded corners on the right side */
+    top: 0; /* Position at the top of the container */
+    right: 0; /* Align to the right side of the container */
+    background: rgb(30, 30, 129); /* Background color of the tag */
+    color: white; /* Text color of the tag */
+    padding: 2px; /* Padding inside the tag */
+    font-size: 0.8em; /* Font size of the tag text */
+    /* Additional properties if needed */
+}
