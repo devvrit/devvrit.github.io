@@ -217,15 +217,16 @@ blockquote p:last-child {
 }
 
 #profile .portrait {
-  background-image: url('../img/portrait.jpg');
+  display: block;
+/*   background-image: url('../img/portrait.jpg'); */
   width: 200px;
   height: 200px;
   margin: 0 auto;
   border-radius: 50%;
   object-fit: cover;
-  background-size: cover;
+/*   background-size: cover;
   -webkit-background-size: cover;
-  -moz-background-size: cover;
+  -moz-background-size: cover; */
 }
 
 #profile .portrait-title h2 {
